@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.SearchDashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_inputfield"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search for Parking"
+            android:textColor="#305f72"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/search_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_card"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Parking \nwith \n BookYourSpace"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.035"/>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@drawable/search_bg"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginLeft="35dp"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/button_arrow"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#CBFADF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/imgAndroid"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/park" />
+
+                <TextView
+                    android:id="@+id/textAndroid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgAndroid"
+                    android:letterSpacing="0.03"
+                    android:text="Mahaboudha"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find your perfect parking space using BookYourSpace ! Parking Application You Can Trust !! Happy Parking Happy You"
+                    android:layout_below="@+id/textAndroid"
+                    android:layout_toRightOf="@+id/imgAndroid"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#323131"
+                    android:letterSpacing="0.03"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/book3"
+                    android:layout_width="136dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/txtDesc"
+                    android:layout_marginLeft="156dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/imgAndroid"
+                    android:gravity="end"
+                    android:paddingRight="20dp"
+                    android:text="Book Parking"
+                    android:textColor="@color/purple_700"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#FFEB3B"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/imgWeb"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/park" />
+
+                <TextView
+                    android:id="@+id/textWeb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chabahil"
+                    android:layout_toRightOf="@+id/imgWeb"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.03"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtDescWeb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find your perfect parking space using BookYourSpace ! Parking Application You Can Trust !! Happy Parking Happy You"
+                    android:layout_below="@+id/textWeb"
+                    android:layout_toRightOf="@+id/imgWeb"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#323131"
+                    android:letterSpacing="0.03"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/book2"
+                    android:layout_width="125dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/txtDescWeb"
+                    android:layout_marginLeft="167dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/imgWeb"
+                    android:gravity="end"
+                    android:paddingRight="20dp"
+                    android:text="Book Parking"
+                    android:textColor="@color/purple_700"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#7CF46E"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/imgIot"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/park"/>
+
+                <TextView
+                    android:id="@+id/textIot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgIot"
+                    android:letterSpacing="0.03"
+                    android:text="Koteshowr"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDescIot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textIot"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgIot"
+                    android:letterSpacing="0.03"
+                    android:text="Find your perfect parking space using BookYourSpace ! Parking Application You Can Trust !! Happy Parking Happy You"
+                    android:textColor="#323131"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/book1"
+                    android:layout_width="134dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/txtDescIot"
+                    android:layout_marginLeft="158dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/imgIot"
+                    android:gravity="end"
+                    android:paddingRight="20dp"
+                    android:text="Book parking"
+                    android:textColor="@color/purple_700"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
